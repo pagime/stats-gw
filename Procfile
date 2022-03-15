@@ -1,1 +1,1 @@
-worker:  vite
+worker:  npm start
