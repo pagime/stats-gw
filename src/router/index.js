@@ -23,7 +23,7 @@ const routes = [
                 },
                 children: [
                     {
-                        path: 'dashboard-version-one',
+                        path: '/dashboards',
                         name: 'dashboard-version-one',
                         component: () =>
                             import('../views/dashboards/Dashboards.v1.vue'),
