@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "set PORT=3001 vite start"
+    "start": "set PORT=8000 vite start"
   },
   "dependencies": {
     "@headlessui/vue": "^1.4.1",
