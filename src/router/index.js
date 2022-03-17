@@ -23,7 +23,7 @@ const routes = [
                 },
                 children: [
                     {
-                        path: '/dashboards',
+                        path: 'dashboard-version-one',
                         name: 'dashboard-version-one',
                         component: () =>
                             import('../views/dashboards/Dashboards.v1.vue'),
@@ -68,7 +68,8 @@ const routes = [
     { path: '/signIn', component: SignIn },
     { path: '/signUp', component: SignUp },
 
-    { path: '/:path(.*)', component: NotFound },
+    { path: '/:path(.*)',  component: () =>
+            import('../views/dashboards/Dashboards.v1.vue'),},
 ]
 
 const router = createRouter({
